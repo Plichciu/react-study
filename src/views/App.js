@@ -1,6 +1,6 @@
 import logo from 'assets/logo.svg';
 import './App.css';
-console.log('hello');
+console.log("hello");
 
 function App() {
   return (

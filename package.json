@@ -17,6 +17,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "lint-staged": {
+       "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+        "prettier --write"
+      ]
+    },
+    "husky": {
+       "hooks": {
+         "pre-commit": "lint-staged"
+       }
+     },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -32,6 +43,8 @@
   "devDependencies": {
     "@babel/core": "^7.17.12",
     "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.15.0"
+    "eslint": "^8.15.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1"
   }
 }
